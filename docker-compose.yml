@@ -1,0 +1,10 @@
+services:
+  mpi_head:
+    image: docker-mpi
+    ports: 
+    - "60037:22"
+    links: 
+    - mpi_node
+
+  mpi_node: 
+    image: docker-mpi
